@@ -1,4 +1,4 @@
-# LearningFullter
+# Learning Flutter
 Flutter学習用のリポジトリ
 
 ## Setup
