@@ -32,4 +32,10 @@ Flutter学習用のリポジトリ
     * Codelab
 
 ### ライブラリ
-* https://medium.com/flutter-jp/logger-ec25d8dd179a
+* [simple_logger](https://pub.dartlang.org/packages/simple_logger)
+   * コードジャンプできるようになっているLoggerライブラリ
+   * https://medium.com/flutter-jp/logger-ec25d8dd179a
+
+* [SpriteWidget](https://pub.dartlang.org/packages/spritewidget)
+   * 2Dゲーム作成用のライブラリ
+   * https://github.com/spritewidget/spritewidget
