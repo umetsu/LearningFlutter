@@ -6,6 +6,7 @@ Flutter学習用のリポジトリ
 ### Android
 1. Android Studioを入れておく
 2. Android Studio内でFlutter Pluginをインストール
+3. Preferences > Editor > Code Style > Dartからdartfmtを使用するようにチェックを入れておく
 
 ### iOS
 1. Xcodeを入れておく
