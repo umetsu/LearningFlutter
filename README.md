@@ -47,3 +47,14 @@ Flutter学習用のリポジトリ
 ### 外部パッケージ(ライブラリ)の追加
 1. pubspec.yamlを編集
 2. `flutter packages get` を実行
+
+### Stateless widget
+Stateless widgetはimmutable。  
+すべてのプロパティはfinalであり、変更できなくなっている。  
+(Javaのfinalと同じなら、再代入ができないだけでimmutableということではなさそう？要検証)  
+
+### Statefull widget
+変更される可能性のある状態を保持しておけるWidget。  
+実装するには次の2つのクラスを使う。  
+1. [StatefulWidget class](https://docs.flutter.io/flutter/widgets/StatefulWidget-class.html)
+2. [State<T extends StatefulWidget> class](https://docs.flutter.io/flutter/widgets/State-class.html)
