@@ -18,11 +18,12 @@ Flutter学習用のリポジトリ
 ## 参考URL
 
 ### 読み物
-* [Flutter Docs](https://flutter.io/docs)
 * [iOSネイティブアプリ開発者から見たFlutter 2018年8月 Release Preview 1 時点での所感](https://medium.com/flutter-jp/flutter-ios-5b2178018d3e)
 * [Flutterの効率良い学び方](https://medium.com/flutter-jp/flutter-learning-c5640c5f05b9)
 
 ### 手を動かすのによさそうなやつ
+* [Flutter Docs](https://flutter.io/docs)
+    * 公式のドキュメント。とにかく豊富
 * [cookbook](https://flutter.io/docs/cookbook)
     * 逆引き的なやつ
 * [codelabs](https://flutter.io/docs/codelabs)
@@ -35,6 +36,6 @@ Flutter学習用のリポジトリ
    * コードジャンプできるようになっているLoggerライブラリ
    * https://medium.com/flutter-jp/logger-ec25d8dd179a
 
-* [SpriteWidget](https://pub.dartlang.org/packages/spritewidget)
+* [spritewidget](https://pub.dartlang.org/packages/spritewidget)
    * 2Dゲーム作成用のライブラリ
    * https://github.com/spritewidget/spritewidget
