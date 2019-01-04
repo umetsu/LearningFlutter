@@ -14,6 +14,10 @@ Flutter学習用のリポジトリ
 ### Flutter SDK
 1. https://flutter.io/docs/get-started/install/macos
     * これに沿っていろいろ設定
+    
+## 外部パッケージ(ライブラリ)の追加
+1. pubspec.yamlを編集
+2. `flutter packages get` を実行
 
 ## 参考URL
 
