@@ -24,6 +24,8 @@ Flutter学習用のリポジトリ
 ### 手を動かすのによさそうなやつ
 * [Flutter Docs](https://flutter.io/docs)
     * 公式のドキュメント。とにかく豊富
+* [Flutter samples](https://github.com/flutter/samples/blob/master/INDEX.md)
+    * アーキテクチャのサンプリなどもリンクされている
 * [cookbook](https://flutter.io/docs/cookbook)
     * 逆引き的なやつ
 * [codelabs](https://flutter.io/docs/codelabs)
