@@ -58,3 +58,20 @@ Stateless widgetはimmutable。
 実装するには次の2つのクラスを使う。  
 1. [StatefulWidget class](https://docs.flutter.io/flutter/widgets/StatefulWidget-class.html)
 2. [State<T extends StatefulWidget> class](https://docs.flutter.io/flutter/widgets/State-class.html)
+   
+### ListView
+リストビュー。Androidで言うRecyclerViewみたいなやつ。  
+itemBuilderに各要素の表示内容を記述する。  
+
+### ListTile.divideTiles
+各要素に区切り線を追加してくれるメソッド。
+
+### ListTile
+シンプルなリスト表示に使えそうなWidget。
+
+### Navigator
+画面遷移に使うやつ。  
+Flutter的には `Route` を追加するというらしい。
+`Navigator.of(context).push(...)` で次の画面へ遷移する。  
+遷移後の画面にはアップボタンが自動的に追加される。  
+
