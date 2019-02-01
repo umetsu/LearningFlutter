@@ -14,6 +14,9 @@ Flutter学習用のリポジトリ
 ### Flutter SDK
 1. https://flutter.io/docs/get-started/install/macos
     * これに沿っていろいろ設定
+    
+### コードフォーマットの設定
+* https://qiita.com/kazuki229/items/bb26e50825cf8a739888
 
 ## 参考URL
 
@@ -82,3 +85,5 @@ Flutter的には `Route` を追加するというらしい。
 `Navigator.of(context).push(...)` で次の画面へ遷移する。  
 遷移後の画面にはアップボタンが自動的に追加される。  
 
+#### Row
+子供のウィジェットを水平方向へ並べる
