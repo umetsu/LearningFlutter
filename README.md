@@ -44,32 +44,39 @@ Flutter学習用のリポジトリ
 
 ## メモ
 
-### 外部パッケージ(ライブラリ)の追加
+### Dart
+
+#### アクセス修飾子
+Datrではプレフィックスとして `_` をつけると、そのクラスに対してprivateになる。
+
+### Flutter
+
+#### 外部パッケージ(ライブラリ)の追加
 1. pubspec.yamlを編集
 2. `flutter packages get` を実行
 
-### Stateless widget
+#### Stateless widget
 Stateless widgetはimmutable。  
 すべてのプロパティはfinalであり、変更できなくなっている。  
 (Javaのfinalと同じなら、再代入ができないだけでimmutableということではなさそう？要検証)  
 
-### Statefull widget
+#### Statefull widget
 変更される可能性のある状態を保持しておけるWidget。  
 実装するには次の2つのクラスを使う。  
 1. [StatefulWidget class](https://docs.flutter.io/flutter/widgets/StatefulWidget-class.html)
 2. [State<T extends StatefulWidget> class](https://docs.flutter.io/flutter/widgets/State-class.html)
    
-### ListView
+#### ListView
 リストビュー。Androidで言うRecyclerViewみたいなやつ。  
 itemBuilderに各要素の表示内容を記述する。  
 
-### ListTile.divideTiles
+#### ListTile.divideTiles
 各要素に区切り線を追加してくれるメソッド。
 
-### ListTile
+#### ListTile
 シンプルなリスト表示に使えそうなWidget。
 
-### Navigator
+#### Navigator
 画面遷移に使うやつ。  
 Flutter的には `Route` を追加するというらしい。
 `Navigator.of(context).push(...)` で次の画面へ遷移する。  
