@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(new FriendlychatApp());
+  runApp(FriendlychatApp());
 }
 
 class FriendlychatApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: "Friendlychat",
-      home: new ChatScreen(),
+      home: ChatScreen(),
     );
   }
 }
@@ -17,31 +17,31 @@ class FriendlychatApp extends StatelessWidget {
 class ChatScreen extends StatefulWidget {
   @override
   State createState() {
-    return new ChatScreenState();
+    return ChatScreenState();
   }
 }
 
 class ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
   final List<ChatMessage> _messages = <ChatMessage>[];
 
-  final TextEditingController _textController = new TextEditingController();
+  final TextEditingController _textController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(title: new Text("Friendlychat")),
-      body: new Column(
+    return Scaffold(
+      appBar: AppBar(title: Text("Friendlychat")),
+      body: Column(
         children: <Widget>[
-          new Flexible(
-            child: new ListView.builder(
-                padding: new EdgeInsets.all(8),
+          Flexible(
+            child: ListView.builder(
+                padding: EdgeInsets.all(8),
                 reverse: true,
                 itemBuilder: (_, int index) => _messages[index],
                 itemCount: _messages.length),
           ),
-          new Divider(height: 1),
-          new Container(
-            decoration: new BoxDecoration(color: Theme.of(context).cardColor),
+          Divider(height: 1),
+          Container(
+            decoration: BoxDecoration(color: Theme.of(context).cardColor),
             child: _buildTextComposer(),
           ),
         ],
@@ -50,24 +50,24 @@ class ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
   }
 
   Widget _buildTextComposer() {
-    return new IconTheme(
-        data: new IconThemeData(color: Theme.of(context).accentColor),
-        child: new Container(
+    return IconTheme(
+        data: IconThemeData(color: Theme.of(context).accentColor),
+        child: Container(
             margin: const EdgeInsets.symmetric(horizontal: 8),
-            child: new Row(
+            child: Row(
               children: <Widget>[
-                new Flexible(
-                  child: new TextField(
+                Flexible(
+                  child: TextField(
                     controller: _textController,
                     onSubmitted: _handleSubmitted,
-                    decoration: new InputDecoration.collapsed(
-                        hintText: "Send a message"),
+                    decoration:
+                        InputDecoration.collapsed(hintText: "Send a message"),
                   ),
                 ),
-                new Container(
+                Container(
                   margin: const EdgeInsets.symmetric(horizontal: 4),
-                  child: new IconButton(
-                      icon: new Icon(Icons.send),
+                  child: IconButton(
+                      icon: Icon(Icons.send),
                       onPressed: () => _handleSubmitted(_textController.text)),
                 )
               ],
@@ -76,7 +76,7 @@ class ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
 
   void _handleSubmitted(String text) {
     _textController.clear();
-    ChatMessage message = new ChatMessage(
+    var message = ChatMessage(
       text: text,
       animationController: AnimationController(
         duration: Duration(milliseconds: 700),
@@ -104,26 +104,26 @@ class ChatMessage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new SizeTransition(
-        sizeFactor: new CurvedAnimation(
-            parent: animationController, curve: Curves.easeOut),
+    return SizeTransition(
+        sizeFactor:
+            CurvedAnimation(parent: animationController, curve: Curves.easeOut),
         axisAlignment: 0.0,
-        child: new Container(
+        child: Container(
           margin: const EdgeInsets.symmetric(vertical: 10),
-          child: new Row(
+          child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              new Container(
+              Container(
                 margin: const EdgeInsets.only(right: 16),
-                child: new CircleAvatar(child: new Text(_name[0])),
+                child: CircleAvatar(child: Text(_name[0])),
               ),
-              new Column(
+              Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  new Text(_name, style: Theme.of(context).textTheme.subhead),
-                  new Container(
+                  Text(_name, style: Theme.of(context).textTheme.subhead),
+                  Container(
                     margin: const EdgeInsets.only(top: 5),
-                    child: new Text(text),
+                    child: Text(text),
                   )
                 ],
               )
